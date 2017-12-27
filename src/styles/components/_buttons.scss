@@ -1,0 +1,114 @@
+$fontweight-ultralight: $fontweight-ultralight;
+$fontweight-light: $fontweight-light;
+$fontweight-normal: $fontweight-normal;
+$fontweight-bold: $fontweight-bold;
+$font-size-small: $font-size-small;
+$font-size-basic: $font-size-basic;
+$font-size-heading: $font-size-heading;
+$fontstyle-heading: $fontstyle-heading;
+$fontstyle-body: $fontstyle-body;
+$primary: $primary;
+$primary-light: $primary-light;
+$primary-second: $primary-second;
+$primary-dark: $primary-dark;
+$primary-white: $primary-white;
+$primary-text: $primary-text;
+.btn {
+    font-family: $fontstyle-heading;
+    padding: 10px 30px;
+    display: inline-block;
+    width: auto;
+}
+
+.btn--standard {
+    border: 3px solid $primary;
+    font-weight: $fontweight-bold;
+    color: $primary;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:hover {
+        color: $primary-white;
+        background-color: $primary;
+    }
+}
+
+.btn {
+    font-family: $fontstyle-heading;
+    padding: 10px 30px;
+    display: inline-block;
+    width: auto;
+}
+
+.btn--primary {
+    border: 3px solid $primary-white;
+    font-weight: $fontweight-bold;
+    color: $primary-white;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    &:hover {
+        color: $primary;
+        background-color: $primary-white;
+    }
+}
+
+.hlink {
+    font-family: $fontstyle-body;
+    font-weight: $fontweight-bold;
+    position: relative;
+    padding: 0 10px;
+    transition: color 0.3s ease-in-out;
+    &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        background-color: $primary;
+        height: 1px;
+        width: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: $primary;
+        height: 1px;
+        width: 100%;
+        width: 100%;
+        opacity: 0;     
+        transition: opacity 0.3s ease-in-out;  
+    }
+    &:hover {
+        color: $primary;
+        &:before {
+            opacity: 1;
+        }
+        &:after {
+            opacity: 1;
+        }
+    }
+}
+
+.hlink--standard {
+
+    &:before {     
+        background-color: $primary;
+      
+        
+    }
+    &:after {
+        content: "";
+     
+        background-color: $primary;
+      
+    }
+    &:hover {
+        color: $primary;     
+    }
+
+    
+}

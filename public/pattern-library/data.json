@@ -1,0 +1,276 @@
+{
+    "project_logo": null,
+    "project_favicon": "favicon.png",
+    "project_name": null,
+    "project_url": null,
+    "copyright_start_year": null,
+    "client_name": null,
+    "client_url": null,
+    "creators": [
+        {
+            "name": "Stewart Palmer",
+            "url": null
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#F9FAFC",
+        "brand_color": "#00585C",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": "Overview",
+            "components_title": "Components"
+        }
+    },
+    "assets": {
+        "css": [
+            "/dist/styles/style.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Montserrat:100,300,400,700"
+    },
+    "content": {
+        "show_first_page_on_load": true,
+        "title": "Overview",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "Base",
+            "title": "Base",
+            "components": [
+                {
+                    "group": "base",
+                    "name": "color-palette",
+                    "title": "Color Palette",
+                    "type": "colors",
+                    "colors": [
+                        "#f5c600",
+                        "#FFDD4C",
+                        "#FFCE00",
+                        "#3e3e3e"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Typography",
+            "title": "Typography",
+            "components": [
+                {
+                    "group": "Typography",
+                    "name": "Regular",
+                    "title": "Regular",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "Typography",
+                    "name": "Bold",
+                    "title": "Bold",
+                    "width": "half"
+                },
+                {
+                    "group": "Typography",
+                    "name": "Regular_BG",
+                    "title": "Regular Background",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                },
+                {
+                    "group": "Typography",
+                    "name": "Bold_BG",
+                    "title": "Bold Background",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Headings",
+            "title": "Headings",
+            "components": [
+                {
+                    "group": "Headings",
+                    "name": "Header_1",
+                    "title": "Header One",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": false,
+                        "disable_code_sample": false
+                    }
+                },
+                {
+                    "group": "Headings",
+                    "name": "Header_2",
+                    "title": "Heading Two",
+                    "width": "half",
+                    "options": {
+                        "sample_dark_background": false,
+                        "disable_code_sample": false
+                    }
+                },
+                {
+                    "group": "Headings",
+                    "name": "Header_3",
+                    "title": "Heading Three",
+                    "width": "half"
+                },
+                {
+                    "group": "Headings",
+                    "name": "Header_4",
+                    "title": "Header Four",
+                    "width": "half"
+                },
+                {
+                    "group": "Headings",
+                    "name": "Heading_1_BG",
+                    "title": "Heading One Primary Background",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                },
+                {
+                    "group": "Headings",
+                    "name": "Heading_2_BG",
+                    "title": "Heading Two (Primary)",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                },
+                {
+                    "group": "Headings",
+                    "name": "Heading_3_BG",
+                    "title": "Heading Three (Primary)",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                },
+                {
+                    "group": "Headings",
+                    "name": "Heading_4_BG",
+                    "title": "HEading Four (Primary)",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "title": "Layout Components",
+            "components": [
+                {
+                    "group": "layout",
+                    "name": "fifty_fifty",
+                    "title": "50/50 Image Right"
+                },
+                {
+                    "group": "layout",
+                    "name": "fifty_fifty_left",
+                    "title": "50/50 Image Left"
+                },
+                {
+                    "group": "layout",
+                    "name": "fifty_fifty_primary",
+                    "title": "50/50 (Primary)"
+                },
+                {
+                    "group": "layout",
+                    "name": "fifty_fifty_left_primary",
+                    "title": "50/50 Image Left (Primary)"
+                }
+            ]
+        },
+        {
+            "name": "navigation",
+            "title": "Navigation",
+            "components": [
+                {
+                    "group": "navigation",
+                    "name": "Main_Menu",
+                    "title": "Main Menu"
+                }
+            ]
+        },
+        {
+            "name": "button",
+            "title": "Button",
+            "components": [
+                {
+                    "group": "button",
+                    "name": "standard",
+                    "title": "Standard",
+                    "width": "half"
+                },
+                {
+                    "group": "button",
+                    "name": "standard_primary",
+                    "title": "Standard (Primary)",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "links",
+            "title": "Hyperlinks",
+            "components": [
+                {
+                    "group": "links",
+                    "name": "standard",
+                    "title": "Standard",
+                    "width": "half"
+                },
+                {
+                    "group": "links",
+                    "name": "standard_primary",
+                    "title": "Standard (Primary)",
+                    "width": "half"
+                }
+            ]
+        },
+        {
+            "name": "other",
+            "title": "Other",
+            "components": [
+                {
+                    "group": "other",
+                    "name": "social",
+                    "title": "Social",
+                    "width": "half"
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}
