@@ -61,13 +61,11 @@ $primary-text: $primary-text;
         right: 0;
         left: 0;
         top: 0;
-        background-color: $primary;
         height: 1px;
         width: 100%;
         width: 100%;
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
-        
     }
     &:after {
         content: "";
@@ -75,15 +73,13 @@ $primary-text: $primary-text;
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: $primary;
         height: 1px;
         width: 100%;
         width: 100%;
-        opacity: 0;     
-        transition: opacity 0.3s ease-in-out;  
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
     }
-    &:hover {
-        color: $primary;
+    &:hover {       
         &:before {
             opacity: 1;
         }
@@ -94,21 +90,28 @@ $primary-text: $primary-text;
 }
 
 .hlink--standard {
-
-    &:before {     
+    &:before {
         background-color: $primary;
-      
-        
     }
     &:after {
         content: "";
-     
         background-color: $primary;
-      
     }
     &:hover {
-        color: $primary;     
+        color: $primary;
     }
+}
 
-    
+.hlink--primary {
+    color: $primary-white;
+    &:before {
+        background-color: $primary-white;
+    }
+    &:after {
+        content: "";
+        background-color: $primary-white;
+    }
+    &:hover {
+        color: $primary-white;
+    }
 }

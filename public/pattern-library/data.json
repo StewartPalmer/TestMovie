@@ -1,30 +1,30 @@
 {
-    "project_logo": null,
-    "project_favicon": "favicon.png",
-    "project_name": null,
+    "project_logo": "/dist/images/POSTER_v3.png",
+    "project_favicon": "/dist/images/POSTER_v3.png",
+    "project_name": "Test",
     "project_url": null,
-    "copyright_start_year": null,
-    "client_name": null,
+    "copyright_start_year": "2017",
+    "client_name": "Brock Yurich",
     "client_url": null,
     "creators": [
         {
-            "name": "Stewart Palmer",
+            "name": "S Palmer",
             "url": null
         }
     ],
     "theme": {
-        "border_color": "#E0E6ED",
-        "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
+        "border_color": "#f5c600",
+        "highlight_color": "#FFDD4C",
+        "brand_color": "#f5c600",
         "background_color": "#FFFFFF",
         "code_highlight_theme": "github",
         "override_code_highlight_bg": "#F9FAFC",
         "sample_dark_background": "#333333",
         "show_project_name": true,
-        "show_version": true,
+        "show_version": false,
         "max_width": null,
         "titles": {
-            "library_title": "Pattern Library",
+            "library_title": "Component Library",
             "pages_title": "Overview",
             "components_title": "Components"
         }
@@ -148,7 +148,7 @@
                 {
                     "group": "Headings",
                     "name": "Heading_1_BG",
-                    "title": "Heading One Primary Background",
+                    "title": "Heading One (Primary)",
                     "width": "half",
                     "options": {
                         "sample_background_color": "#f5c600"
@@ -175,7 +175,7 @@
                 {
                     "group": "Headings",
                     "name": "Heading_4_BG",
-                    "title": "HEading Four (Primary)",
+                    "title": "Heading Four (Primary)",
                     "width": "half",
                     "options": {
                         "sample_background_color": "#f5c600"
@@ -206,6 +206,16 @@
                     "group": "layout",
                     "name": "fifty_fifty_left_primary",
                     "title": "50/50 Image Left (Primary)"
+                },
+                {
+                    "group": "layout",
+                    "name": "centred_text",
+                    "title": "Centered Text"
+                },
+                {
+                    "group": "layout",
+                    "name": "centred_text_primary",
+                    "title": "Centered Text (Primary)"
                 }
             ]
         },
@@ -255,7 +265,10 @@
                     "group": "links",
                     "name": "standard_primary",
                     "title": "Standard (Primary)",
-                    "width": "half"
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
                 }
             ]
         },
@@ -268,6 +281,15 @@
                     "name": "social",
                     "title": "Social",
                     "width": "half"
+                },
+                {
+                    "group": "other",
+                    "name": "social_primary",
+                    "title": "Social (Primary)",
+                    "width": "half",
+                    "options": {
+                        "sample_background_color": "#f5c600"
+                    }
                 }
             ]
         }
