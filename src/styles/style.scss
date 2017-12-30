@@ -1,3 +1,5 @@
+@import 'other/main';
+
 @import 'variables';
 @import 'typography';
 @import 'scss/fontawesome.scss';
@@ -8,6 +10,7 @@
 @import 'components/buttons';
 @import 'components/centered_text';
 @import 'components/socialcomponents';
+@import 'other/default-skin/default-skin';
 
 
 
@@ -25,7 +28,7 @@ body {
   overflow: hidden;
   top: 0;
   left: 0;
-  z-index: 99999;
+  z-index: 900;
 }
 
 nav {
@@ -219,4 +222,25 @@ a:hover {
       color: $primary-light;
     }
   }
+
+  .my-gallery {
+
+    display: flex;
+    vertical-align: middle;
+  }
  
+  .gallery__item {
+
+    width: 25%;
+    margin: 0;
+    height: 400px;
+    overflow: hidden;
+    display: inline-block;
+    & img {
+      vertical-align: middle;
+min-width: 100%;
+width: auto;
+
+      height: 100%;
+    }
+  }

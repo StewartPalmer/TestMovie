@@ -33,7 +33,10 @@
         "css": [
             "/dist/styles/style.css"
         ],
-        "js": []
+        "js": [
+            "/dist/scripts/main.js",
+            "/dist/scripts/test-gallery.js"
+        ]
     },
     "font_libraries": {
         "typekit_code": null,
@@ -216,6 +219,11 @@
                     "group": "layout",
                     "name": "centred_text_primary",
                     "title": "Centered Text (Primary)"
+                },
+                {
+                    "group": "layout",
+                    "name": "gallery",
+                    "title": "Gallery"
                 }
             ]
         },
