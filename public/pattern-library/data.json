@@ -56,7 +56,7 @@
     },
     "groups": [
         {
-            "name": "Base",
+            "name": "base",
             "title": "Base",
             "components": [
                 {
@@ -74,11 +74,11 @@
             ]
         },
         {
-            "name": "Typography",
+            "name": "typography",
             "title": "Typography",
             "components": [
                 {
-                    "group": "Typography",
+                    "group": "typography",
                     "name": "Regular",
                     "title": "Regular",
                     "width": "half",
@@ -87,13 +87,13 @@
                     }
                 },
                 {
-                    "group": "Typography",
+                    "group": "typography",
                     "name": "Bold",
                     "title": "Bold",
                     "width": "half"
                 },
                 {
-                    "group": "Typography",
+                    "group": "typography",
                     "name": "Regular_BG",
                     "title": "Regular Background",
                     "width": "half",
@@ -102,7 +102,7 @@
                     }
                 },
                 {
-                    "group": "Typography",
+                    "group": "typography",
                     "name": "Bold_BG",
                     "title": "Bold Background",
                     "width": "half",
@@ -113,11 +113,11 @@
             ]
         },
         {
-            "name": "Headings",
+            "name": "headings",
             "title": "Headings",
             "components": [
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Header_1",
                     "title": "Header One",
                     "width": "half",
@@ -127,7 +127,7 @@
                     }
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Header_2",
                     "title": "Heading Two",
                     "width": "half",
@@ -137,19 +137,19 @@
                     }
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Header_3",
                     "title": "Heading Three",
                     "width": "half"
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Header_4",
                     "title": "Header Four",
                     "width": "half"
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Heading_1_BG",
                     "title": "Heading One (Primary)",
                     "width": "half",
@@ -158,7 +158,7 @@
                     }
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Heading_2_BG",
                     "title": "Heading Two (Primary)",
                     "width": "half",
@@ -167,7 +167,7 @@
                     }
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Heading_3_BG",
                     "title": "Heading Three (Primary)",
                     "width": "half",
@@ -176,7 +176,7 @@
                     }
                 },
                 {
-                    "group": "Headings",
+                    "group": "headings",
                     "name": "Heading_4_BG",
                     "title": "Heading Four (Primary)",
                     "width": "half",
