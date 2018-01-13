@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import MainSlider from '@/components/MainSlider'
+import About from '@/components/About'
 
 Vue.use(Router)
 
@@ -8,8 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'MainSlider',
+      component: MainSlider
+    },
+    {
+      path: '/About/',
+      name: 'About',
+      component: About
     }
   ]
 })

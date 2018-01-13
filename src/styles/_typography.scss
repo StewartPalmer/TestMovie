@@ -15,29 +15,34 @@ p {
   font-size: $local-font-size-basic;
   line-height: $local-font-size-lineheight;
   font-weight: $local-fontweight-light;
+  color: $primary-dark;
   b {
     font-weight: $local-fontweight-bold;
   }
 }
 
-.background--none {
+ 
   h1 {
+    color: $primary-dark;
     font-family: $local-fontstyle-heading;
     font-size: ($local-font-size-heading * 1.2);
   }
   h2 {
+    color: $primary-dark;
     font-family: $local-fontstyle-heading;
     font-size: $local-font-size-heading;
   }
   h3 {
+    color: $primary-dark;
     font-family: $local-fontstyle-heading;
     font-size: ($local-font-size-heading * 0.8);
   }
   h4 {
+    color: $primary-dark;
     font-family: $local-fontstyle-heading;
     font-size: ($local-font-size-heading * 0.6);
   }
-}
+
 
 .background--primary {
   background-color: $primary;
@@ -59,4 +64,10 @@ p {
   h4 {
     color: $primary-white;
   }
+}
+
+.centered_text {
+
+  font-family: $fontstyle-heading;
+
 }

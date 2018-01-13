@@ -1,11 +1,11 @@
 $fontweight-ultralight: 100;
 $fontweight-light: 300;
-$fontweight-normal: 400;
+$fontweight-normal: 300;
 $fontweight-bold: 700;
-$font-size-small: 12px;
-$font-size-basic: 16px;
-$font-size-heading: 20px;
-$font-size-lineheight: (16px*1.8);
+$font-size-small: 15px;
+$font-size-basic: 18px;
+$font-size-heading: 30px;
+$font-size-lineheight: ($font-size-basic*1.9);
 $fontstyle-heading: 'Montserrat', sans-serif;
 $fontstyle-body: 'Open Sans', sans-serif;
 $primary: #f5c600;

@@ -1,19 +1,3 @@
-$fontweight-ultralight: 100;
-$fontweight-light: 300;
-$fontweight-normal: 400;
-$fontweight-bold: 700;
-$font-size-small: 12px;
-$font-size-basic: 16px;
-$font-size-heading: 30px;
-$font-size-lineheight: (16px*1.8);
-$fontstyle-heading: 'Montserrat', sans-serif;
-$fontstyle-body: 'Open Sans', sans-serif;
-$primary: $primary;
-$primary-light: #FFDD4C;
-$primary-second: #FFCE00;
-$primary-dark: #3e3e3e;
-$primary-white: #ffffff;
-$primary-text: $primary-text;
 
 
 .slider_container {
@@ -89,7 +73,8 @@ content: '\f060';
     
 }
 .slider_inner {
-
+background-position: center;
+background-size: cover;
 height: 100%;
 width: 100%;
 
@@ -105,25 +90,54 @@ width: 100%;
     bottom: 30px;
     font-size: $font-size-heading;
     transition: color 0.2s ease-in-out;
-   
+    
+    &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        height: 13px;
+        width: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    
+        background-color:$primary;
+    }
+
     &:hover {
         color: $primary;
+
+             
+        &:before {
+            opacity: 1;
+        }
+        &:after {
+            opacity: 1;
+        }    
        
     }
+}
+
+.slider_sub-title {
+
+
+    font-size: ($font-size-heading * 0.7);
 }
 
 .slick-list,
 .slick-track,
 .slick-slide,
 .slick-slide > div,
-.slider_element {
+.slider_element,
+.slider_element a {
     height: 100%;
   }
   
   .slider_one {
     background-image: url(assets/POSTER_v3.jpg);
-    background-position: center;
-    background-size: cover;
+  
   }
   
   .slider_two {

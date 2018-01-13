@@ -200,14 +200,14 @@ a:hover {
   font-weight: $fontweight-light;
 }
 
-.title-block__title {
+.title-block__title h2 {
   font-family: $fontstyle-heading;
   font-weight: $fontweight-bold;
-  font-size: 20px;
+  font-size: $font-size-heading;
   margin: 0;
 }
 
-.title-block__subtitle h1,h2,h3,h4{
+.title-block__subtitle {
   font-size: $font-size-small;
   font-family: $fontstyle-heading;
   font-weight: $fontweight-light;
