@@ -1,0 +1,103 @@
+$fontweight-ultralight: 100;
+$fontweight-light: 300;
+$fontweight-normal: 400;
+$fontweight-bold: 700;
+$font-size-small: 12px;
+$font-size-basic: 16px;
+$font-size-heading: 30px;
+$font-size-lineheight: (16px*1.8);
+$fontstyle-heading: 'Montserrat', sans-serif;
+$fontstyle-body: 'Open Sans', sans-serif;
+$primary: $primary;
+$primary-light: #FFDD4C;
+$primary-second: #FFCE00;
+$primary-dark: #3e3e3e;
+$primary-white: #ffffff;
+$primary-text: $primary-text;
+
+
+
+.slick-arrow {
+    position: absolute;
+
+ 
+    z-index: 9999;
+    background-color: rgba(0, 0, 0 ,0);
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border: $primary solid 2px;
+    border-radius: 50%;
+    color: $primary;
+    transition: background-color 0.5s ease-in-out, border 0.5s ease-in-out, color 0.5s ease-in-out;
+    
+
+
+    &:hover {
+
+    background-color: $primary;
+    border: $primary-white solid 2px;
+    color: $primary-white;
+   
+
+
+
+    }
+
+
+}
+
+
+
+.slick-prev {
+    right: 100px;
+    bottom: 25px;
+    font-size: 0;
+&:before {
+font-family: 'Font Awesome 5 Pro';
+font-weight: 300;
+font-size: 20px;
+content: '\f060';
+
+
+
+}
+}
+
+.slick-next {
+    position: absolute;
+    bottom: 25px;
+    right: 30px;
+    z-index: 9999;
+    font-size: 0;
+
+    &:before {
+        font-family: 'Font Awesome 5 Pro';
+        font-weight: 300;
+        font-size: 20px;
+        content: '\f061';
+    }
+    
+}
+
+.slider_inner {
+    background: $primary-white;
+    font-family: $fontstyle-heading;
+    padding: 30px;    
+    color: $primary-dark;
+    position: absolute;
+    width: 300px;
+    bottom: 30px;
+    font-size: 10px;
+    transition: color 0.2s ease-in-out;
+   
+    &:hover {
+        color: $primary;
+       
+    }
+}
+
+.slider_inner--black {
+
+   
+}

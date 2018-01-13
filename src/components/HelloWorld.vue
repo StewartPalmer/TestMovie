@@ -2,25 +2,45 @@
 
 <template>
  <slick ref="slick" :options="slickOptions">
- <div class="slider_element slider_one"><h3>1</h3> </div>
-  <div class="slider_element slider_two"><h3>2</h3></div>
-  <div class="slider_element slider_three"><h3>3</h3></div>  
+ <div class="slider_element slider_one"> 
+   <div class="slider_inner slider_inner--black"> 
+     <h1 class='title-block__title'>About Test</h1>
+ <h2 class='title-block__subtitle'>Find out more about the film...</h2>
+ </div>
+ 
+ </div>
+  <div class="slider_element slider_two">
+   <div class="slider_inner"> 
+     <h1>The Team</h1>
+ <h2>Find out more about the cast and crew...</h2>
+ </div>
+
+  </div>
+  <div class="slider_element slider_three">
+       <div class="slider_inner"> 
+     <h1>About Test</h1>
+ <h2>Find out more about the film...</h2>
+ </div>
+    </div>  
+ 
 </slick>
+
 </template>
 
 <script>
 import Slick from "vue-slick";
 
-
 export default {
   name: "HelloWorld",
   data() {
     return {
-     
       slickOptions: {
         slidesToShow: 1.5,
         slidesToScroll: 1,
-        infinite: false
+        infinite: false,
+        arrows: true,
+        
+
 
         // Any other options that can be got from plugin documentation
       }
@@ -55,33 +75,23 @@ export default {
 <style scoped>
 .slider_element {
   height: 100vh;
-
-
 }
 
-.slider_one{
-
+.slider_one {
   background-image: url(../assets/POSTER_v3.jpg);
   background-position: center;
   background-size: cover;
-
 }
 
-.slider_two{
-
+.slider_two {
   background-image: url(../assets/IMG_9030.jpg);
   background-position: center;
   background-size: cover;
-
 }
 
-.slider_three{
-
+.slider_three {
   background-image: url(../assets/tank.jpeg);
   background-position: center;
   background-size: cover;
 }
-
-
-
 </style>

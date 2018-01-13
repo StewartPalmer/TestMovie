@@ -11,53 +11,52 @@ $local-fontstyle-body: $fontstyle-body;
 $primary-white: $primary-white;
 $primary: $primary;
 p {
-    font-family: $local-fontstyle-body;
-    font-size: $local-font-size-basic;
-    line-height: $local-font-size-lineheight;
-    font-weight: $local-fontweight-light;
-    b {
-        font-weight: $local-fontweight-bold;
-    }
+  font-family: $local-fontstyle-body;
+  font-size: $local-font-size-basic;
+  line-height: $local-font-size-lineheight;
+  font-weight: $local-fontweight-light;
+  b {
+    font-weight: $local-fontweight-bold;
+  }
 }
 
-h1 {
+.background--none {
+  h1 {
     font-family: $local-fontstyle-heading;
     font-size: ($local-font-size-heading * 1.2);
-}
-
-h2 {
+  }
+  h2 {
     font-family: $local-fontstyle-heading;
     font-size: $local-font-size-heading;
-}
-
-h3 {
+  }
+  h3 {
     font-family: $local-fontstyle-heading;
     font-size: ($local-font-size-heading * 0.8);
-}
-
-h4 {
+  }
+  h4 {
     font-family: $local-fontstyle-heading;
     font-size: ($local-font-size-heading * 0.6);
+  }
 }
 
 .background--primary {
-    background-color: $primary;
-    p {
-        color: $primary-white;
-        b {
-            color: $primary-white;
-        }
+  background-color: $primary;
+  p {
+    color: $primary-white;
+    b {
+      color: $primary-white;
     }
-    h1 {
-        color: $primary-white;
-    }
-    h2 {
-        color: $primary-white;
-    }
-    h3 {
-        color: $primary-white;
-    }
-    h4 {
-        color: $primary-white;
-    }
+  }
+  h1 {
+    color: $primary-white;
+  }
+  h2 {
+    color: $primary-white;
+  }
+  h3 {
+    color: $primary-white;
+  }
+  h4 {
+    color: $primary-white;
+  }
 }
