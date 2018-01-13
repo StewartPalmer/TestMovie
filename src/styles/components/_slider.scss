@@ -16,7 +16,16 @@ $primary-white: #ffffff;
 $primary-text: $primary-text;
 
 
-
+.slider_container {
+    vertical-align:top;
+    height: calc(100vh - 40px);
+    width: calc(100% - 40px);
+    margin: 20px;
+    
+}
+.slick-slider {
+    height: 100%;
+}
 .slick-arrow {
     position: absolute;
 
@@ -79,16 +88,22 @@ content: '\f060';
     }
     
 }
-
 .slider_inner {
+
+height: 100%;
+width: 100%;
+
+}
+
+.slider_content {
     background: $primary-white;
     font-family: $fontstyle-heading;
     padding: 30px;    
     color: $primary-dark;
     position: absolute;
-    width: 300px;
+    width: 500px;
     bottom: 30px;
-    font-size: 10px;
+    font-size: $font-size-heading;
     transition: color 0.2s ease-in-out;
    
     &:hover {
@@ -97,7 +112,28 @@ content: '\f060';
     }
 }
 
-.slider_inner--black {
-
-   
-}
+.slick-list,
+.slick-track,
+.slick-slide,
+.slick-slide > div,
+.slider_element {
+    height: 100%;
+  }
+  
+  .slider_one {
+    background-image: url(assets/POSTER_v3.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .slider_two {
+    background-image: url(assets/IMG_9030.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .slider_three {
+    background-image: url(assets/tank.jpeg);
+    background-position: center;
+    background-size: cover;
+  }
