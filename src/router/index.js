@@ -1,9 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import MainSlider from '@/components/MainSlider'
-import About from '@/components/About'
+import MainSlider from '@/pages/MainSlider'
+import About from '@/pages/About'
+import Meta from 'vue-meta'
+import Team from '@/pages/Team'
 
 Vue.use(Router)
+Vue.use(Meta)
 
 export default new Router({
   routes: [
@@ -16,6 +19,11 @@ export default new Router({
       path: '/About/',
       name: 'About',
       component: About
+    },
+    {
+      path: '/Team/',
+      name: 'Team',
+      component: Team
     }
   ]
 })

@@ -47,7 +47,7 @@ export default {
         },
         {
           title: "The Crew",
-          subTitle: "Find out more about the film",
+          subTitle: "Get to know the team",
           background: "static/IMG_9030.JPG",
           navigation: './Team'
         }

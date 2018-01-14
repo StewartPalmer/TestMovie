@@ -9,12 +9,12 @@
     "build": "node build/build.js",
     "start": "node server.js",
     "lint": "eslint --ext .js,.vue src"
-    
   },
   "dependencies": {
     "express": "^4.16.2",
     "jquery": "^3.2.1",
     "vue": "^2.5.2",
+    "vue-meta": "^1.4.2",
     "vue-router": "^3.0.1",
     "vue-slick": "^1.1.12"
   },

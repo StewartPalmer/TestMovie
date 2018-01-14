@@ -1,24 +1,22 @@
-
-
 <template>
   <div id="app">
-
   <Navigation></Navigation>
   <transition name="fade" mode="out-in">
     <router-view/>
    </transition> 
-
-  </div>
-  
+  </div>  
 </template>
 
 <script>
 import '../node_modules/slick-carousel/slick/slick.css'
-import Navigation from '@/components/Navigation'
-
+import Navigation from '@/pages/Navigation'
 
 export default {
   name: 'app',
+    metaInfo: {
+       title: 'Test',
+       titleTemplate: '%s | Test: A Classic American Story....On Steroids'
+     },
    components: {
      Navigation
   },
@@ -27,7 +25,8 @@ export default {
     const toDepth = to.path.split('/').length
     const fromDepth = from.path.split('/').length
     this.transitionName = 'fade'
-  }
+  },
+
  
 }
 }
