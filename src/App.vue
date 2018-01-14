@@ -2,6 +2,8 @@
 
 <template>
   <div id="app">
+
+  <Navigation></Navigation>
   <transition name="fade" mode="out-in">
     <router-view/>
    </transition> 
@@ -12,17 +14,21 @@
 
 <script>
 import '../node_modules/slick-carousel/slick/slick.css'
-
+import Navigation from '@/components/Navigation'
 
 
 export default {
   name: 'app',
+   components: {
+     Navigation
+  },
   watch: {
   '$route' (to, from) {
     const toDepth = to.path.split('/').length
     const fromDepth = from.path.split('/').length
     this.transitionName = 'fade'
   }
+ 
 }
 }
 </script>
