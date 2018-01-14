@@ -34,6 +34,27 @@
     }
   }
 
+  @media  (max-width: 600px) {
+
+
+    .hero-image_content {
+left: 0;
+right: 0;
+bottom: 20%;
+margin: auto;
+    
+      
+  
+      & h1 {
+      font-size: ($font-size-heading*1.5);
+      text-align: center;
+     
+      }
+    }
+   }
+
+
+
   .hero-image_scroll {
 position: absolute;
 right: 0;
