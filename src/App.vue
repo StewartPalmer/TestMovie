@@ -14,7 +14,7 @@ import Navigation from '@/pages/Navigation'
 export default {
   name: 'app',
     metaInfo: {
-       title: 'Test',
+       title: 'Home',
        titleTemplate: '%s | Test: A Classic American Story....On Steroids'
      },
    components: {

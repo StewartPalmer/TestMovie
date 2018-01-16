@@ -14,7 +14,12 @@
         </router-link>
       </div>
     </slick>
+
+     <div>
   </div>
+  </div>
+
+ 
     </transition>
 </template>
 
