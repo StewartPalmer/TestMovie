@@ -1,26 +1,20 @@
 <template>
-  <transition name="fade" transition-mode="in-out">
-    
-  <div class="slider_container">
-    <slick ref="slick" :options="slickOptions">
-      <div v-for="slider in sliderData" class="slider_element" :key="slider.title">
-        <router-link  :to="slider.navigation" >
-          <div class="slider_inner" :style="{ 'background-image': 'url(' + slider.background + ')' }">
-            <div class="slider_content">
-              <h1>{{slider.title}}</h1>
-              <h2 class="slider_sub-title">{{slider.subTitle}}</h2>
+  <transition name="fade" transition-mode="in-out">    
+    <div class="slider_container">
+      <slick ref="slick" :options="slickOptions">
+        <div v-for="slider in sliderData" class="slider_element" :key="slider.title">
+          <router-link  :to="slider.navigation" >
+            <div class="slider_inner" :style="{ 'background-image': 'url(' + slider.background + ')' }">
+              <div class="slider_content">
+                <h1>{{slider.title}}</h1>
+                <h2 class="slider_sub-title">{{slider.subTitle}}</h2>
+              </div>
             </div>
-          </div>
-        </router-link>
-      </div>
-    </slick>
-
-     <div>
-  </div>
-  </div>
-
- 
-    </transition>
+          </router-link>
+        </div>
+      </slick>
+    </div> 
+  </transition>
 </template>
 
 <script>
@@ -47,13 +41,13 @@ export default {
       sliderData: [{
           title: "About Test",
           subTitle: "Find out more about the film",
-          background: "static/POSTER_v3.jpg",
+          background: "https://sps.ams3.digitaloceanspaces.com/Test/test_poster_yellow.jpg",
           navigation: './About'
         },
         {
           title: "The Crew",
           subTitle: "Get to know the team",
-          background: "static/IMG_9030.JPG",
+          background: "https://sps.ams3.digitaloceanspaces.com/Test/test_brock_04.jpg",
           navigation: './Team'
         }
       ]

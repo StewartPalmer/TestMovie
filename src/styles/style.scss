@@ -1,10 +1,9 @@
-@import 'other/main';
 
 @import 'variables';
 @import 'typography';
-@import 'scss/fontawesome.scss';
-@import 'scss/fa-brands.scss';
-@import 'scss/fa-regular.scss';
+@import 'typography/fontawesome.scss';
+@import 'typography/fa-brands.scss';
+@import 'typography/fa-regular.scss';
 
 @import 'components/fitfyfitfyComponent';
 @import 'components/heroimage';
