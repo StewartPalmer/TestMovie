@@ -1,6 +1,7 @@
 <template>
   <div id="app">
   <Navigation></Navigation>
+  <videocontainer></videocontainer>
   <transition name="fade" mode="out-in">
     <router-view/>
    </transition> 
@@ -10,6 +11,7 @@
 <script>
 import '../node_modules/slick-carousel/slick/slick.css'
 import Navigation from '@/pages/Navigation'
+import videocontainer from '@/pages/VideoPlayer'
 
 export default {
   name: 'app',
@@ -18,17 +20,16 @@ export default {
        titleTemplate: '%s | Test: A Classic American Story....On Steroids'
      },
    components: {
-     Navigation
+     Navigation,
+    videocontainer
   },
   watch: {
   '$route' (to, from) {
     const toDepth = to.path.split('/').length
     const fromDepth = from.path.split('/').length
     this.transitionName = 'fade'
-  },
-
- 
-}
+    } 
+  }
 }
 </script>
 

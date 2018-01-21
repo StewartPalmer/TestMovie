@@ -3,14 +3,16 @@
     <div class="slider_container">
       <slick ref="slick" :options="slickOptions">
         <div v-for="slider in sliderData" class="slider_element" :key="slider.title">
-          <router-link  :to="slider.navigation" >
+         
             <div class="slider_inner" :style="{ 'background-image': 'url(' + slider.background + ')' }">
+               <router-link  :to="slider.navigation" >
               <div class="slider_content">
                 <h1>{{slider.title}}</h1>
                 <h2 class="slider_sub-title">{{slider.subTitle}}</h2>
               </div>
+                </router-link>
             </div>
-          </router-link>
+        
         </div>
       </slick>
     </div> 
