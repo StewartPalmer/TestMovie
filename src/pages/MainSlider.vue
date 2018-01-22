@@ -41,9 +41,15 @@ export default {
         ]
       },
       sliderData: [{
-          title: "About Test",
+          title: "Watch The Trailer",
           subTitle: "Find out more about the film",
           background: "https://sps.ams3.digitaloceanspaces.com/Test/test_poster_yellow.jpg",
+          navigation: './About'
+        },
+        {
+          title: "About Test",
+          subTitle: "Find out more about the film",
+          background: "https://sps.ams3.digitaloceanspaces.com/Test/test_brock_001.jpg",
           navigation: './About'
         },
         {
