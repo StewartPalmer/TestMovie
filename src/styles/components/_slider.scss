@@ -16,8 +16,8 @@
  
     z-index: 9999;
     background-color: rgba(0, 0, 0 ,0);
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     border: 0;
     border: $primary solid 2px;
     border-radius: 50%;
@@ -138,8 +138,7 @@ font-size: 25px;
 
 
 .slider_sub-title {
-
-
+    font-weight: 300;
     font-size: ($font-size-heading * 0.7);
 }
 
