@@ -21,6 +21,7 @@ export default {
         // videojs options
         muted: false,
         language: "en",
+        autoplay: true, 
        
         sources: [
           {
