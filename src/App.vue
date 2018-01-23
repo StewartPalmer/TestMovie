@@ -11,6 +11,7 @@
 import '../node_modules/slick-carousel/slick/slick.css'
 import Navigation from '@/pages/Navigation'
 
+
 export default {
   name: 'app',
     metaInfo: {
@@ -25,10 +26,8 @@ export default {
     const toDepth = to.path.split('/').length
     const fromDepth = from.path.split('/').length
     this.transitionName = 'fade'
-  },
-
- 
-}
+    } 
+  }
 }
 </script>
 

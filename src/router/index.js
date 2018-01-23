@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MainSlider from '@/pages/MainSlider'
 import About from '@/pages/About'
+import VideoPlayer from '@/pages/VideoPlayer'
 import Meta from 'vue-meta'
 import Team from '@/pages/Team'
 
@@ -24,6 +25,14 @@ export default new Router({
       path: '/Team/',
       name: 'Team',
       component: Team
+    },
+    {
+      path: '/Trailer/',
+      name: 'Trailer',
+      component: VideoPlayer
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
