@@ -84,7 +84,7 @@ width: 100%;
     font-family: $fontstyle-heading;
     padding: 30px;    
     color: $primary-dark;
-    width: 100%;      
+    width: 70%;      
     font-size: $font-size-heading;
     transition: color 0.2s ease-in-out;
     
@@ -145,7 +145,7 @@ width: 100%;
 
 @media  (max-width: 600px) {
     .slider_content {
-      
+      width: 100%;
         font-size: ($font-size-heading * 0.5);
         background-color: rgba($primary-white, 0.8);
         padding-bottom: 20px;
