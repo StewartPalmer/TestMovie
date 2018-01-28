@@ -97,23 +97,21 @@ a:hover {
 
 
 .menu-trigger {
-  color: $primary-white;
+  color: $primary;
 
   top: 50px;
   left: 50px;
   position: fixed;
   z-index: 9999;
   font-size: 0;
-
   background-color: transparent;
   border-color: transparent;
 
   &:before {
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300;
-    background-color: $primary;
-    border-radius: 50%;  
-    border: solid 2px $primary-white;
+    background-color: $primary-dark;  
+    //border: solid 2px $primary-white;
  
     padding: 10px 12px;
     font-size: $font-size-heading ;
@@ -122,7 +120,7 @@ a:hover {
 }
 
 .menu-trigger--open {
-  color: $primary-white;
+  color: $primary;
 
   &:before {
   
