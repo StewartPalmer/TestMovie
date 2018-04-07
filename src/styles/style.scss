@@ -1,19 +1,17 @@
-
 @import 'variables';
 @import 'typography';
 @import 'typography/fontawesome.scss';
 @import 'typography/fa-brands.scss';
 @import 'typography/fa-regular.scss';
-
 @import 'components/fitfyfitfyComponent';
 @import 'components/heroimage';
 @import 'components/buttons';
 @import 'components/centered_text';
 @import 'components/socialcomponents';
 @import 'components/slider';
-
-
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}
 
 body {
   margin: 0;
@@ -23,8 +21,9 @@ body {
 .video-js {
   position: relative !important;
   width: 100% !important;
-  height: 100vh !important;
-}
+  height: calc(100vh - 62px) !important; }
+
+
 .vjs-poster {
   position: absolute !important;
   left: 0;
@@ -34,7 +33,6 @@ body {
 }
 
 .vjs-big-play-button {
-
   right: 0;
   left: 0;
   margin: auto;
@@ -42,7 +40,6 @@ body {
   border-radius: 0 !important;
   top: 50% !important;
 }
-
 
 .navigation-container {
   position: fixed;
@@ -95,10 +92,8 @@ a:hover {
   -webkit-touch-callout: none;
 }
 
-
 .menu-trigger {
   color: $primary;
-
   top: 50px;
   left: 50px;
   position: fixed;
@@ -106,30 +101,22 @@ a:hover {
   font-size: 0;
   background-color: transparent;
   border-color: transparent;
-
   &:before {
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300;
-    background-color: $primary-dark;  
-    //border: solid 2px $primary-white;
- 
+    background-color: $primary-dark; //border: solid 2px $primary-white;
     padding: 10px 12px;
-    font-size: $font-size-heading ;
+    font-size: $font-size-heading;
     content: '\f0c9';
   }
 }
 
 .menu-trigger--open {
   color: $primary;
-
   &:before {
-  
     content: '\f00d';
   }
-
 }
-
-
 
 #menu {
   position: fixed;
@@ -141,7 +128,6 @@ a:hover {
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   z-index: 999;
-
 }
 
 #menu_inner {
@@ -162,7 +148,6 @@ a:hover {
   font-size: 32px;
 }
 
-
 /*
   * And let's slide it in from the left
   */
@@ -171,10 +156,42 @@ a:hover {
   transform: none;
 }
 
+.cta_fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: $primary-white;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  z-index: 998;
+
+  a {
+    border: solid $primary 2px;
+    margin: 10px;
+    display: inline-block;
+    background-color: $primary-white;
+    padding: 10px 80px;
+    font-family: $fontstyle-heading;
+    color: $primary;
+    font-weight: $fontweight-bold;
+    font-size: $font-size-basic;
+    transition: all ease-in-out 0.5s;
+    &:hover {
+      
+      color: $primary-dark;
+      
+      border: solid $primary-dark 2px;
+    }
+
+  }
+}
 
 
+.video-player {
 
-
+  height: calc(100vh - 58px);
+}
 .title-block__pretitle {
   font-family: $fontstyle-heading;
   font-weight: $fontweight-light;
@@ -193,45 +210,40 @@ a:hover {
   font-weight: $fontweight-light;
 }
 
+.top_social {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  width: 300px;
+}
 
-
-
-  .top_social {
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    width: 300px;
+.top_socialicon {
+  flex-grow: 1;
+  font-size: 40px;
+  text-align: center;
+  &:hover {
+    color: $primary-light;
   }
-  .top_socialicon {
-    flex-grow: 1;
-    font-size: 40px;
-    text-align: center;   
-    &:hover {
-      color: $primary-light;
-    }
-  }
+}
 
-  .my-gallery {
+.my-gallery {
+  display: flex;
+  vertical-align: middle;
+}
 
-    display: flex;
+.gallery__item {
+  width: 25%;
+  margin: 0;
+  height: 400px;
+  overflow: hidden;
+  display: inline-block;
+  & img {
     vertical-align: middle;
+    min-width: 100%;
+    width: auto;
+    height: 100%;
   }
- 
-  .gallery__item {
-
-    width: 25%;
-    margin: 0;
-    height: 400px;
-    overflow: hidden;
-    display: inline-block;
-    & img {
-      vertical-align: middle;
-min-width: 100%;
-width: auto;
-
-      height: 100%;
-    }
-  }
+}
